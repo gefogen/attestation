@@ -1,0 +1,4 @@
+Django~=4.1.7
+djangorestframework~=3.14.0
+environ~=1.0
+python-dotenv~=0.21.1
