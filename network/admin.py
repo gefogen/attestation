@@ -19,7 +19,7 @@ class BaseLinkAdmin(admin.ModelAdmin):
     list_filter = ('city',)
     fieldsets = [
         (None, {'fields': ['level', 'title', 'debt', 'supplier']}),
-        ('Contacts', {'fields': ['country', 'city', 'street', 'home_number']}),
+        ('Contacts', {'fields': ['email', 'country', 'city', 'street', 'home_number']}),
     ]
 
     def supplier_link(self, obj):
@@ -27,7 +27,7 @@ class BaseLinkAdmin(admin.ModelAdmin):
 
         if obj.supplier:
             url = reverse(
-                'admin:suppliers_company_change',
+                'admin:supplier_company_change',
                 args=(obj.supplier.id, )
             )
 
