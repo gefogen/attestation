@@ -9,7 +9,7 @@ from network.serializers import LinkSerializer
 
 class LinkViewSet(ModelViewSet):
     queryset = Link.objects.all()
-    filter_backends = DjangoFilterBackend
+    filter_backends = [DjangoFilterBackend]
     filterset_class = LinkFilter
     permission_classes = PermissionsUsers
 

@@ -27,7 +27,7 @@ class BaseLinkAdmin(admin.ModelAdmin):
 
         if obj.supplier:
             url = reverse(
-                'admin:supplier_company_change',
+                'admin:network_link_change',
                 args=(obj.supplier.id, )
             )
 
