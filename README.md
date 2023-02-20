@@ -10,12 +10,5 @@ Stack:
 To launch the application:
 -
 - Сreate a PostgreSQL database, start the server with ```python manage.py runserver```
+- Сreate a Admin User ```python manage.py createsuperuser```
 - The application is available at: http://127.0.0.1/admin # access to the admin panel
-
-
-
-To access the admin panel:
--
-
-- login: admin
-- password: admin
